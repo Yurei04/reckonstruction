@@ -1,15 +1,15 @@
 "use client";
 import { Input } from "../ui/input";
 
-export default function ReckonInput({ searchJob, set, placeholder = "Search..." }) {
+export default function ReckonInput({ searchJob, set, ...props }) {
   return (
-    <div className="w-full">
-      <Input
-        type="text"
-        placeholder={placeholder}
-        value={searchJob}
-        onChange={(e) => set(e.target.value)}
-      />
-    </div>
+    <input
+      type="text"
+      className="w-full px-4 py-2 border rounded-lg focus:outline-none"
+      value={searchJob}
+      onChange={(e) => set(e.target.value)}
+      placeholder="Search job title..."
+      {...props}
+    />
   );
 }

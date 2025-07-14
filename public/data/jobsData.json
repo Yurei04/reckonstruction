@@ -1,0 +1,206 @@
+[
+  {
+    "job": "graphic designer",
+    "type": "remote",
+    "des": "Graphic designers create visual concepts using computer software to communicate ideas...",
+    "requirements": {
+      "hearing": 10,
+      "eyesight": 10,
+      "physicalStrength": 10,
+      "mentallyCapable": 10,
+      "comprehension": {
+        "technologyComprehension": 10,
+        "readingComprehension": 10
+      },
+      "education": {
+        "highschool": "yes",
+        "college": "yes",
+        "masters": "no"
+      }
+    },
+    "skills": {
+      "software": ["Photoshop", "Illustrator", "Figma"],
+      "softSkills": ["creativity", "communication"]
+    },
+    "salaryRange": {
+      "min": 25000,
+      "max": 60000,
+      "currency": "USD"
+    },
+    "demandLevel": "high",
+    "unfit": ["blind", "no hands"],
+    "accessibleAlternatives": [
+      {
+        "job": "Voice UI Designer",
+        "why": "Suited for individuals with visual impairment."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "website",
+        "title": "Graphic Design Basics",
+        "url": "https://www.coursera.org/learn/graphic-design",
+        "cost": 0
+      },
+      {
+        "type": "book",
+        "title": "Thinking with Type",
+        "url": "https://example.com",
+        "cost": 15
+      }
+    ]
+  },
+  {
+    "job": "data analyst",
+    "type": "hybrid",
+    "des": "Data analysts interpret data and turn it into information which can offer ways to improve a business.",
+    "requirements": {
+      "hearing": 8,
+      "eyesight": 9,
+      "physicalStrength": 5,
+      "mentallyCapable": 10,
+      "comprehension": {
+        "technologyComprehension": 10,
+        "readingComprehension": 9
+      },
+      "education": {
+        "highschool": "yes",
+        "college": "yes",
+        "masters": "preferred"
+      }
+    },
+    "skills": {
+      "software": ["Excel", "SQL", "Tableau", "Python"],
+      "softSkills": ["critical thinking", "attention to detail"]
+    },
+    "salaryRange": {
+      "min": 45000,
+      "max": 80000,
+      "currency": "USD"
+    },
+    "demandLevel": "medium",
+    "unfit": ["severe cognitive delay"],
+    "accessibleAlternatives": [
+      {
+        "job": "report automation specialist",
+        "why": "Involves less analytical thinking, more technical task flows."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "website",
+        "title": "Google Data Analytics Certificate",
+        "url": "https://coursera.org/professional-certificates/google-data-analytics",
+        "cost": 0
+      },
+      {
+        "type": "book",
+        "title": "Data Science for Business",
+        "url": "https://example.com/data-book",
+        "cost": 25
+      }
+    ]
+  },
+  {
+    "job": "virtual assistant",
+    "type": "remote",
+    "des": "Virtual assistants help with scheduling, communications, data entry, and other administrative tasks.",
+    "requirements": {
+      "hearing": 6,
+      "eyesight": 8,
+      "physicalStrength": 4,
+      "mentallyCapable": 8,
+      "comprehension": {
+        "technologyComprehension": 7,
+        "readingComprehension": 8
+      },
+      "education": {
+        "highschool": "yes",
+        "college": "no",
+        "masters": "no"
+      }
+    },
+    "skills": {
+      "software": ["Google Workspace", "Slack", "Zoom"],
+      "softSkills": ["organization", "communication"]
+    },
+    "salaryRange": {
+      "min": 15000,
+      "max": 35000,
+      "currency": "USD"
+    },
+    "demandLevel": "high",
+    "unfit": ["severe hearing loss"],
+    "accessibleAlternatives": [
+      {
+        "job": "Data Entry Clerk",
+        "why": "Minimal communication needed, good for hearing impaired."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "website",
+        "title": "How to Become a VA",
+        "url": "https://virtualassistantjobs.com/training",
+        "cost": 0
+      },
+      {
+        "type": "book",
+        "title": "Virtual Freedom",
+        "url": "https://example.com/virtual-freedom",
+        "cost": 12
+      }
+    ]
+  },
+  {
+    "job": "front-end developer",
+    "type": "remote",
+    "des": "Front-end developers build interactive and visually appealing web interfaces using modern JavaScript frameworks.",
+    "requirements": {
+      "hearing": 6,
+      "eyesight": 9,
+      "physicalStrength": 6,
+      "mentallyCapable": 9,
+      "comprehension": {
+        "technologyComprehension": 10,
+        "readingComprehension": 9
+      },
+      "education": {
+        "highschool": "yes",
+        "college": "optional",
+        "masters": "no"
+      }
+    },
+    "skills": {
+      "software": ["HTML", "CSS", "JavaScript", "React", "Figma"],
+      "softSkills": ["problem solving", "teamwork"]
+    },
+    "salaryRange": {
+      "min": 50000,
+      "max": 90000,
+      "currency": "USD"
+    },
+    "demandLevel": "very high",
+    "unfit": ["blind"],
+    "accessibleAlternatives": [
+      {
+        "job": "Back-end Developer",
+        "why": "Focuses on logic, server code — better for visually impaired devs."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "website",
+        "title": "Frontend Developer Career Path",
+        "url": "https://codecademy.com/learn/paths/front-end-engineer-career-path",
+        "cost": 0
+      },
+      {
+        "type": "book",
+        "title": "Eloquent JavaScript",
+        "url": "https://eloquentjavascript.net/",
+        "cost": 0
+      }
+    ]
+  }
+]
