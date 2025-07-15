@@ -47,6 +47,12 @@
         "title": "Thinking with Type",
         "url": "https://example.com",
         "cost": 15
+      },
+      {
+        "type": "book",
+        "title": "Thinking with Type",
+        "url": "https://example.com",
+        "cost": 15
       }
     ]
   },
@@ -92,6 +98,12 @@
         "title": "Google Data Analytics Certificate",
         "url": "https://coursera.org/professional-certificates/google-data-analytics",
         "cost": 0
+      },
+      {
+        "type": "book",
+        "title": "Data Science for Business",
+        "url": "https://example.com/data-book",
+        "cost": 25
       },
       {
         "type": "book",

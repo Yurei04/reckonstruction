@@ -1,0 +1,25 @@
+[
+    {
+        "name": "John Doe",
+        "age": 24,
+        "martialStatus": "single",
+        "capability": {
+            "hearing": 8,
+            "eyesight": 9,
+            "physicalStrength": 5,
+            "mentallyCapable": 10,
+            "comprehension": {
+                "technologyComprehension": 10,
+                "readingComprehension": 9
+            },
+            "education": {
+                "highschool": "yes",
+                "college": "yes",
+                "masters": "preferred"
+            }
+        },
+        "unifit": [""],
+        "searchingFor": "",
+        "skills": []
+    }
+]

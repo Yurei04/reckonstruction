@@ -3,7 +3,7 @@ import { Input } from "../ui/input";
 
 export default function ReckonInput({ searchJob, set, ...props }) {
   return (
-    <input
+    <Input
       type="text"
       className="w-full px-4 py-2 border rounded-lg focus:outline-none"
       value={searchJob}
