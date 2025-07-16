@@ -90,7 +90,7 @@ function searchCheck() {
     return (
       <>
         {before}
-        <span className="font-bold text-blue-600">{match}</span>
+        <span className="font-bold text-amber-600">{match}</span>
         {after}
       </>
     );
@@ -104,10 +104,11 @@ function searchCheck() {
           set={setSearchJob}
           onFocus={() => setShowSuggestions(true)}
           onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+          className="bg-amber-300/20 border border-amber-300 cursor-pointer" 
         />
 
         <div className="cursor-pointer">
-          <Button className="cursor-pointer" onClick={() => searchCheck()}>
+          <Button className="bg-amber-300 text-amber-950 hover:text-amber-200 cursor-pointer" onClick={() => searchCheck()}>
             {label}
           </Button>
         </div>
@@ -115,7 +116,7 @@ function searchCheck() {
       </div>
 
       {showSuggestions && searchJob && (
-        <div className="absolute z-10 bg-black border text-amber-100 w-full mt-1 rounded-lg shadow">
+        <div className="absolute z-10 bg-black border border-amber-300 text-amber-100 w-full mt-2 rounded-lg shadow">
           {filteredSuggestions.length > 0 ? (
             filteredSuggestions.map((job, index) => (
               <button
@@ -139,7 +140,7 @@ function searchCheck() {
 
         {chosenJob && (
           <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-            <DialogContent className="w-1/2 h-full p-6 bg-black/50 backdrop-blur-lg border border-white/10 text-amber-200 rounded-2xl overflow-y-auto">
+            <DialogContent className="w-1/2 h-full p-6 bg-black/50 backdrop-blur-lg border border-amber-300/30 text-amber-200 rounded-2xl overflow-y-auto">
               {/* Header and Title */}
               <div className="p-6">
                 <DialogHeader>
@@ -212,8 +213,9 @@ function searchCheck() {
                     searchValue={searchJob}
                     clearSearch={() => setSearchJob("")}
                     database={jobDatabase}
+                    className="cursor-pointer"
                   />
-                  <Button onClick={() => setOpenDialog(false)}>Close</Button>
+                  <Button className="cursor-pointer" onClick={() => setOpenDialog(false)}>Close</Button>
                 </div>
               </div>
             </DialogContent>
