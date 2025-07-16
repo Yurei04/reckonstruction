@@ -115,12 +115,12 @@ function searchCheck() {
       </div>
 
       {showSuggestions && searchJob && (
-        <div className="absolute z-10 bg-black border w-full mt-1 rounded-lg shadow">
+        <div className="absolute z-10 bg-black border text-amber-100 w-full mt-1 rounded-lg shadow">
           {filteredSuggestions.length > 0 ? (
             filteredSuggestions.map((job, index) => (
               <button
                 key={index}
-                className="w-full text-left px-4 py-2 hover:bg-blue-100 cursor-pointer"
+                className="w-full text-left px-4 py-2 hover:bg-amber-600/30 cursor-pointer rounded-lg"
                 onClick={() => {
                   setSearchJob(job.job);
                   setShowSuggestions(false);
@@ -137,105 +137,88 @@ function searchCheck() {
         </div>
       )}
 
-      {chosenJob && (
-        <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-          <DialogContent className="w-1/2 h-screen max-w-none rounded-none p-6 bg-black/90 text-amber-100 overflow-auto">
-            <DialogHeader>
-              <DialogTitle>{chosenJob.job}</DialogTitle>
-            </DialogHeader>
+        {chosenJob && (
+          <Dialog open={openDialog} onOpenChange={setOpenDialog}>
+            <DialogContent className="w-1/2 h-full p-6 bg-black/50 backdrop-blur-lg border border-white/10 text-amber-200 rounded-2xl overflow-y-auto">
+              {/* Header and Title */}
+              <div className="p-6">
+                <DialogHeader>
+                  <DialogTitle className="text-center text-3xl font-bold mb-2">
+                    {chosenJob.job}
+                  </DialogTitle>
+                </DialogHeader>
 
-            <div className="space-y-4 text-white">
-              {chosenJob.suggestions ? (
-                <>
-                  <p className="text-lg">{chosenJob.des}</p>
-                  <ul className="list-disc pl-5">
-                    {chosenJob.suggestions.map((sug, i) => (
-                      <li key={i}>
-                        <strong>{sug.job}</strong> — {sug.des}
-                        <Button
-                          className="ml-2"
-                          onClick={() => {
-                            setChosenJob(sug);
-                          }}
-                        >
-                          View
-                        </Button>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              ) : (
-                <>
-                  <p>
-                    <strong>Type:</strong> {chosenJob.type}
-                  </p>
-                  <p>
-                    <strong>Description:</strong> {chosenJob.des}
-                  </p>
-                  <p>
-                    <strong>Salary Range:</strong>{" "}
-                    {chosenJob.salaryRange?.min} - {chosenJob.salaryRange?.max}{" "}
-                    {chosenJob.salaryRange?.currency}
-                  </p>
-                  <p>
-                    <strong>Key Software:</strong>{" "}
-                    {chosenJob.skills?.software?.join(", ")}
-                  </p>
-                  <p>
-                    <strong>Soft Skills:</strong>{" "}
-                    {chosenJob.skills?.softSkills?.join(", ")}
-                  </p>
-                  <p>
-                    <strong>Unfit for:</strong> {chosenJob.unfit?.join(", ")}
-                  </p>
-                  <p>
-                    <strong>Accessible Alternatives:</strong>
-                  </p>
-                  <ul className="list-disc pl-5">
-                    {chosenJob.accessibleAlternatives?.map((alt, idx) => (
-                      <li key={idx}>
-                        <strong>{alt.job}</strong>: {alt.why}
-                      </li>
-                    ))}
-                  </ul>
-                  <p>
-                    <strong>Recommendations:</strong>
-                  </p>
-                  <ul className="list-disc pl-5">
-                    {chosenJob.recommendations?.map((rec, idx) => (
-                      <li key={idx}>
-                        [{rec.type}]{" "}
-                        <a
-                          href={rec.url}
-                          className="text-blue-400 underline"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {rec.title}
-                        </a>{" "}
-                        – ${rec.cost}
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </div>
-
-            <DialogFooter>
-              <div className="cursor-pointer">
-                <ConstructButton
-                  label="Analyze"
-                  searchValue={searchJob}
-                  clearSearch={() => setSearchJob("")}
-                  database={jobDatabase}
-                />
+                {/* Image */}
+                <div className="w-full h-60 mb-4 rounded-xl overflow-hidden">
+                  <img
+                    src={chosenJob.img || "/images/image4.png"}
+                    alt={chosenJob.job}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <Button onClick={() => setOpenDialog(false)}>Close</Button>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
-      )}
 
+              <div className="w-full flex flex-col justify-start gap-8 mt-6">
+                {chosenJob.suggestions ? (
+                  <>
+                    <p className="text-lg">{chosenJob.des}</p>
+                    <ul className="list-disc pl-5 space-y-2">
+                      {chosenJob.suggestions.map((sug, i) => (
+                        <li key={i}>
+                          <strong>{sug.job}</strong> — {sug.des}
+                          <Button
+                            className="ml-2 mt-1"
+                            onClick={() => setChosenJob(sug)}
+                          >
+                            View
+                          </Button>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <>
+                    <p><strong>Type:</strong> {chosenJob.type}</p>
+                    <p><strong>Description:</strong> {chosenJob.des}</p>
+                    <p>
+                      <strong>Salary Range:</strong>{" "}
+                      {chosenJob.salaryRange?.min} - {chosenJob.salaryRange?.max}{" "}
+                      {chosenJob.salaryRange?.currency}
+                    </p>
+                    <p><strong>Key Software:</strong> {chosenJob.skills?.software?.join(", ")}</p>
+                    <p><strong>Soft Skills:</strong> {chosenJob.skills?.softSkills?.join(", ")}</p>
+                    <p>
+                      <strong>Unfit for:</strong>{" "}
+                      {chosenJob.unfit?.length > 0 ? chosenJob.unfit.join(", ") : "None"}
+                    </p>
+
+                    {chosenJob.accessibleAlternatives?.length > 0 && (
+                      <div>
+                        <p className="font-bold">Accessible Alternatives:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          {chosenJob.accessibleAlternatives.map((alt, idx) => (
+                            <li key={idx}>
+                              <strong>{alt.job}</strong>: {alt.why}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </>
+                )}
+                <div className=" border-t border-white/10 flex items-center">
+                  <ConstructButton
+                    label="Analyze"
+                    searchValue={searchJob}
+                    clearSearch={() => setSearchJob("")}
+                    database={jobDatabase}
+                  />
+                  <Button onClick={() => setOpenDialog(false)}>Close</Button>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
+        )}
     </div>
   );
 }

@@ -88,7 +88,7 @@ export default function ConstructButton({ label, searchValue, clearSearch, datab
     }
 
     return (
-       <div className="w-full min-h-screen flex flex-col items-center justify-center z-10 overflow-x-hidden p-4">
+       <div className="flex flex-col items-center justify-center z-10 overflow-x-hidden p-4">
         <Button
             onClick={() => {
                 const matchedJob = database.find(
@@ -115,7 +115,7 @@ export default function ConstructButton({ label, searchValue, clearSearch, datab
                     </DialogTitle>
                 </DialogHeader>
 
-                <div className="w-full flex flex-col lg:flex-row gap-8 mt-6">
+                <div className="w-full flex flex-col items-center justify-center lg:flex-row gap-8 mt-6">
                     {/* Left Column */}
                     <div className="w-full lg:w-1/2 flex flex-col gap-6">
                         {fullProgress.length > 0 && (
@@ -154,25 +154,6 @@ export default function ConstructButton({ label, searchValue, clearSearch, datab
                     )}
                     </div>
 
-                    {/* Right Column */}
-                    <div className="w-full lg:w-1/2 flex flex-col gap-6">
-                    {deficits.length > 0 && (
-                        <div className="space-y-4">
-                        <p className="text-blue-400 font-semibold">Your Profile Status</p>
-                        {deficits.map((gap, i) => {
-                            const percentage = gap.youHave * 10;
-                            return (
-                            <div key={i}>
-                                <p className="text-sm font-medium mb-1">{gap.category} {gap.youHave}</p>
-                                <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
-                                <div className="h-full bg-blue-500" style={{ width: `${percentage}%` }} />
-                                </div>
-                            </div>
-                            );
-                        })}
-                        </div>
-                    )}
-                    </div>
                 </div>
 
                 {/* Suggestions Section */}
