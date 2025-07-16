@@ -74,7 +74,7 @@ export default function LoginForm({ className, ...props }) {
 
               <div className="text-center text-sm text-amber-200">
                 Don’t have an account?{" "}
-                <a href="/signin" className="underline underline-offset-4 hover:text-amber-400">
+                <a href="/surveyQuestions" className="underline underline-offset-4 hover:text-amber-400">
                   Sign up
                 </a>
               </div>

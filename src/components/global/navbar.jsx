@@ -30,7 +30,7 @@ export default function NavBar() {
                 key={link.title}
                 variant="ghost"
                 size="sm"
-                className="text-xs border hover:border-amber-500 hover:bg-amber-900 transition-colors active:border-amber-200"
+                className="text-xs border hover:border-amber-500 hover:bg-amber-900 hover:text-amber-200 transition-colors active:border-amber-200"
                 asChild
               >
                 <Link href={link.href}>{link.title}</Link>
@@ -43,7 +43,7 @@ export default function NavBar() {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-amber-300 hover:bg-amber-800"
+              className="text-amber-300 hover:bg-amber-800 hover:text-amber-200 "
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </Button>
@@ -58,7 +58,7 @@ export default function NavBar() {
                 key={link.title}
                 variant="ghost"
                 size="sm"
-                className="w-full justify-start text-sm border hover:border-amber-500 hover:bg-amber-900 transition-colors"
+                className="w-full justify-start text-sm border hover:border-amber-500 hover:bg-amber-900 hover:text-amber-200 transition-colors"
                 asChild
                 onClick={() => setIsOpen(false)}
               >

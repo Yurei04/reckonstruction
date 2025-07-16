@@ -1,0 +1,222 @@
+[
+  {
+    "information": {
+      "title": "Example",
+      "type": "Book",
+      "cost": "Free",
+      "severityMatch": "Reading Comprehension: 8",
+      "keywords": ["reading", "education", "book"],
+      "link": "https://example.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Mental Health Basics",
+      "type": "Article",
+      "cost": "Free",
+      "severityMatch": "Mental Clarity: 6",
+      "keywords": ["mental health", "wellbeing", "psychology"],
+      "link": "https://mental.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Nutrition Research 2023",
+      "type": "Research",
+      "cost": "Paid",
+      "severityMatch": "Nutritional Knowledge: 9",
+      "keywords": ["nutrition", "research", "health"],
+      "link": "https://research.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Digital Literacy 101",
+      "type": "PDF",
+      "cost": "Free",
+      "severityMatch": "Tech Comprehension: 7",
+      "keywords": ["digital", "literacy", "technology"],
+      "link": "https://digitalliteracy.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Cognitive Training Manual",
+      "type": "Book",
+      "cost": "Paid",
+      "severityMatch": "Memory: 8",
+      "keywords": ["cognitive", "training", "brain"],
+      "link": "https://cognitiveguide.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Health Rights in Law",
+      "type": "Article",
+      "cost": "Free",
+      "severityMatch": "Legal Understanding: 6",
+      "keywords": ["law", "health", "rights"],
+      "link": "https://healthlaw.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Intro to Epidemiology",
+      "type": "Research",
+      "cost": "Free",
+      "severityMatch": "Scientific Reasoning: 7",
+      "keywords": ["epidemiology", "disease", "public health"],
+      "link": "https://epistudy.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Breathing Techniques Guide",
+      "type": "PDF",
+      "cost": "Free",
+      "severityMatch": "Physical Relaxation: 5",
+      "keywords": ["breathing", "relaxation", "stress"],
+      "link": "https://breathingguide.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Sleep Hygiene Checklist",
+      "type": "Article",
+      "cost": "Free",
+      "severityMatch": "Sleep Awareness: 6",
+      "keywords": ["sleep", "hygiene", "rest"],
+      "link": "https://sleeptips.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "2024 Public Health Report",
+      "type": "Research",
+      "cost": "Paid",
+      "severityMatch": "Data Interpretation: 9",
+      "keywords": ["report", "statistics", "public health"],
+      "link": "https://healthstats2024.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Understanding Vaccines",
+      "type": "Article",
+      "cost": "Free",
+      "severityMatch": "Medical Awareness: 7",
+      "keywords": ["vaccines", "health", "prevention"],
+      "link": "https://vaccineinfo.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "The Science of Sleep",
+      "type": "Book",
+      "cost": "Paid",
+      "severityMatch": "Rest Importance: 6",
+      "keywords": ["sleep", "science", "health"],
+      "link": "https://sleepbook.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Emergency Preparedness Guide",
+      "type": "PDF",
+      "cost": "Free",
+      "severityMatch": "Crisis Response: 8",
+      "keywords": ["emergency", "preparedness", "disaster"],
+      "link": "https://emergencyguide.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Healthy Eating for All Ages",
+      "type": "Article",
+      "cost": "Free",
+      "severityMatch": "Nutritional Planning: 7",
+      "keywords": ["diet", "health", "nutrition"],
+      "link": "https://eatingwell.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Stress Management Handbook",
+      "type": "Book",
+      "cost": "Paid",
+      "severityMatch": "Emotional Regulation: 7",
+      "keywords": ["stress", "anxiety", "self-help"],
+      "link": "https://stressreliefbooks.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Accessible Fitness Plans",
+      "type": "PDF",
+      "cost": "Free",
+      "severityMatch": "Physical Mobility: 6",
+      "keywords": ["fitness", "accessible", "exercise"],
+      "link": "https://inclusivefitness.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Mindfulness for Beginners",
+      "type": "Article",
+      "cost": "Free",
+      "severityMatch": "Mind Clarity: 5",
+      "keywords": ["mindfulness", "meditation", "wellbeing"],
+      "link": "https://mindstart.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Global Health Challenges",
+      "type": "Research",
+      "cost": "Paid",
+      "severityMatch": "Critical Thinking: 9",
+      "keywords": ["global", "health", "issues"],
+      "link": "https://ghc2024.org",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Visual Guide to First Aid",
+      "type": "PDF",
+      "cost": "Free",
+      "severityMatch": "Safety Readiness: 8",
+      "keywords": ["first aid", "injury", "response"],
+      "link": "https://firstaidvisuals.com",
+      "image": "/images/image4.png"
+    }
+  },
+  {
+    "information": {
+      "title": "Understanding Chronic Illness",
+      "type": "Book",
+      "cost": "Paid",
+      "severityMatch": "Empathy & Management: 7",
+      "keywords": ["chronic", "illness", "management"],
+      "link": "https://chronicbook.com",
+      "image": "/images/image4.png"
+    }
+  }
+]
