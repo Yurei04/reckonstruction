@@ -19,17 +19,56 @@ import Particles from "@/components/effects/particles";
 import { Slider } from "@/components/ui/slider";
 
 const capabilityQuestions = [
-{ key: "readingWriting", question: "How well can you read and write?" },
-{ key: "vision", question: "How well can you see?" },
-{ key: "hearing", question: "How well can you hear?" },
-{ key: "speechCommunication", question: "How well can you communicate verbally?" },
-{ key: "physicalAbility", question: "How physically capable are you?" },
-{ key: "mentalFocus", question: "How well can you stay focused?" },
-{ key: "financialWorkBarriers", question: "How financially stable are you for work?" },
-{ key: "legalSocialBarriers", question: "Do you have legal or social barriers to work?" },
-{ key: "caregiversDependents", question: "Do you have caregiving responsibilities?" },
-{ key: "techSkills", question: "How well do you handle technology?" },
+  {
+    key: "literacyLevel",
+    question: "What is your current level of reading and writing comfort?",
+  },
+  {
+    key: "visionAccessibility",
+    question: "Do you have any visual impairments or need visual accommodations?",
+  },
+  {
+    key: "hearingAccessibility",
+    question: "Do you have any hearing challenges or use hearing assistance tools?",
+  },
+  {
+    key: "speechOrCommunication",
+    question: "Do you face challenges in verbal or written communication?",
+  },
+  {
+    key: "mobilityNeeds",
+    question: "Do you have any mobility limitations or require physical accommodations?",
+  },
+  {
+    key: "cognitiveSupport",
+    question: "Do you face difficulties with focus, memory, or cognitive tasks?",
+  },
+  {
+    key: "financialConstraints",
+    question: "Are financial limitations affecting your ability to work or train?",
+  },
+  {
+    key: "legalSocialObstacles",
+    question: "Are there legal, social, or identity-based challenges you’re navigating?",
+  },
+  {
+    key: "caregivingResponsibilities",
+    question: "Do you regularly care for children, elders, or others?",
+  },
+  {
+    key: "digitalConfidence",
+    question: "How comfortable are you with using digital tools and technology?",
+  },
+  {
+    key: "workEnvironmentPreference",
+    question: "Do you prefer remote, hybrid, or on-site work due to your needs?",
+  },
+  {
+    key: "workScheduleFlexibility",
+    question: "Do you require flexible working hours or breaks due to health or life reasons?",
+  },
 ];
+
 
 const totalSections = 3;
 
@@ -255,7 +294,7 @@ export default function SurveyQuestionMain() {
                     </Button>
                     ) : (
                     <Button type="submit" className="w-1/3 bg-amber-300 text-amber-950 hover:text-amber-200 cursor-pointer" onClick={handleSubmit}>
-                        <Link href="/reckon">Complete</Link>
+                        <Link href="/homepage">Complete</Link>
                     </Button>
                     )}
                 </CardFooter>

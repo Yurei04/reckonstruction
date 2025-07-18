@@ -9,7 +9,7 @@ import Threads from "@/components/effects/threads";
 
 export default function HomepageMain() {
   return (
-    <section className="relative min-h-screen w-full pt-30 overflow-x-hidden text-amber-100">
+    <section className="relative min-h-screen w-full overflow-x-hidden text-amber-100">
       <div  className="pointer-events-none fixed inset-0 z-[-1] ">
           <Threads
               amplitude={1}
@@ -18,7 +18,7 @@ export default function HomepageMain() {
           />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-8 lg:px-12 flex flex-col-reverse lg:flex-row items-center justify-center gap-12">
+      <div className="container mx-auto pt-32  px-4 sm:px-8 lg:px-12 flex flex-col-reverse lg:flex-row items-center justify-center gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export default function HomepageMain() {
           className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-amber-500 bg-[#181818] shadow-xl overflow-hidden"
         >
           <Image
-            src="/images/reckon-logo.png"
+            src="/images/logo.png"
             alt="reckonStruction Logo"
             layout="fill"
             objectFit="cover"
